@@ -22,7 +22,7 @@ Groovy based Jenkins CI skeleton
     
 ## Links
     
-   * [Jenkins DSL](http://muc-srvci1:18080/plugin/job-dsl/api-viewer/index.html)
+   * [Jenkins DSL](https://github.com/jenkinsci/job-dsl-plugin)
    * [Pipeline plugin](https://jenkins.io/doc/book/pipeline/)
     
 
@@ -36,8 +36,7 @@ Groovy based Jenkins CI skeleton
 | /src/main/groovy/qa | config classes |
 | /templates | templates for config and jobs |
 | /shell | put shell scripts here |
-| Jenkinsfile_C9.groovy | CI pipeline for backend services |
-| JenkinsFile_Cloud9UI.txt | CI pipeline for UI services |
+| Jenkinsfile.groovy | CI pipeline for backend services |
 | update_env.sh | script for updating pod in kubernetis |
 
 ## App Services under test
