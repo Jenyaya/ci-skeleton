@@ -23,6 +23,7 @@ Groovy based Jenkins CI skeleton
 ## Links
     
    * [Jenkins DSL](https://github.com/jenkinsci/job-dsl-plugin)
+   * [Jenkins DSL API](https://jenkinsci.github.io/job-dsl-plugin/)
    * [Pipeline plugin](https://jenkins.io/doc/book/pipeline/)
     
 
@@ -59,7 +60,7 @@ displayName "${config.baseName}-ci-${service}-${test_type}"
 
 # Adding new service
 
-1) Create config file ```resources/{services|ui}/<service.name>.json``` using template
+1) Create config file ```resources/{services}/<service.name>.json``` using template
 
 2) Add method to read config to class _Config_ in ```/src/main/groovy/qa```:
 ```
@@ -68,7 +69,7 @@ displayName "${config.baseName}-ci-${service}-${test_type}"
     }
 ```
 
-3) Add jobs file into ```/jobs/{backend|webui}/``` using template
+3) Add jobs file into ```/jobs/{services}/``` using template
 
 4) Add service into pipeline ```/jobs/team_pipeline.groovy```:
 ```
